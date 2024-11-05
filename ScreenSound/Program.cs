@@ -85,7 +85,8 @@ opcoes.Add(1, new MenuRegistrarBanda());
 opcoes.Add(2, new MenuRegistrarAlbum());
 opcoes.Add(3, new MenuMostrarBandas());
 opcoes.Add(4, new MenuAvaliarBanda());
-opcoes.Add(5, new MenuExibirDetalhes());
+opcoes.Add(5, new MenuAvaliarAlbum());
+opcoes.Add(6, new MenuExibirDetalhes());
 opcoes.Add(-1, new MenuSair());
 void ExibirLogo()
 {
@@ -105,10 +106,12 @@ void ExibirOpcoesDoMenu()
 {
     ExibirLogo();
     Console.WriteLine("\n1. Registrar uma banda");
-    Console.WriteLine("2. Mostrar todas as bandas");
-    Console.WriteLine("3. Avaliar uma banda");
-    Console.WriteLine("4. Exibir a média de uma banda");
-    Console.WriteLine("5. Sair");
+    Console.WriteLine("\n2. Registrar álbum");
+    Console.WriteLine("3. Mostrar todas as bandas");
+    Console.WriteLine("4. Avaliar uma banda");
+    Console.WriteLine("5. Avaliar um álbum");
+    Console.WriteLine("6. Exibir detalhes de uma banda");
+    Console.WriteLine("-1. Sair");
 
     Console.Write("\nOpção: ");
     string opcaoEscolhida = Console.ReadLine()!;
